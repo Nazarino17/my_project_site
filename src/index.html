@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportClub</title>
     <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="slick-slider/slick-theme.css">
+    <link rel="stylesheet" href="slick-slider/slick.css">
 </head>
 <body>
     
@@ -118,13 +120,13 @@
 
     <section class="about">
         <div class="about__content">
-            <div class="about__ticket">
-                <div class="container">
+            <div class="about__main">
+                <div class="about__ticket">
                     <div class="about__title">
-                        Безлім цілий рік
+                        <span>Безлім </span>  цілий рік
                     </div>
                     <div class="about__subtitle">
-                        за 3960 грн
+                        за <span>3960 грн</span>
                     </div>
     
                     <button class="about__btn">
@@ -135,8 +137,135 @@
                         З цим абонементом ти будеш <br> в ідеальній формі
                     </div>
                 </div>
+    
+                <div class="about__slider">
+                    <div class="about__slider-promotion">
+                        Акція
+                    </div>
+                    <div class="about__slider-content">
+                        <div class="about__slider-card">
+                            <img src="image/slider-main/img-slick-main1.png" alt="training">
+                            <h2 class="about__slider-title one-title">
+                                При покупці будь-якого абонемента <span>1 заняття з тренером у подарунок</span>
+                            </h2>
+                        </div>
+                        <div class="about__slider-card">
+                            <img src="image/slider-main/img-slick-main2.png" alt="training">
+                            <h2 class="about__slider-title two-title">
+                                <span>-20%</span> на абонементи <span>новим клієнтам</span>
+                            </h2>
+                        </div>
+                        <div class="about__slider-card">
+                            <img src="image/slider-main/img-slick-main3.png" alt="training">
+                            <h2 class="about__slider-title tree-title">
+                                <span>Програма лояльності</span> для постійних клієнтів
+                            </h2>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="about__news">
+                    <div class="about__news-content">
+                        <div class="about__news-text">
+                            <h2>
+                                Новини
+                            </h2>
+    
+                            <a class="about__news-all" href="#">
+                                переглянути всі
+                            </a>
+                        </div>
+    
+                       <div class="about__news-tape">
+                        <div class="about__news-card">
+                            <div class="about__news-title">
+                                <h3>Оновлений Спортклуб</h3>
+                            </div>
+                            <div class="about__news-subtitle">
+                                <p>
+                                    Ви вже бачили оновлений та розширений Спортклуб Дії на Семашко 13, біля метро Житомирська?
+                                </p>
+                            </div>
+    
+                            <div class="about__news-info">
+                                <div class="about__news-data">
+                                    04 09 2019
+                                </div>
+    
+                                <div class="about__news-more">
+                                    детальніше
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__news-card">
+                            <div class="about__news-title">
+                                <h3>Відкривається група з ЙОГИ</h3>
+                            </div>
+                            <div class="about__news-subtitle">
+                                <p>
+                                    Заняття будуть проводитися щопонеділка, середи та п'ятниці о 8:00.
+    Запрошуємо всіх бажаючих...
+                                </p>
+                            </div>
+    
+                            <div class="about__news-info">
+                                <div class="about__news-data">
+                                    04 09 2019
+                                </div>
+    
+                                <div class="about__news-more">
+                                    детальніше
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+    <section class="act">
+        <div class="container">
+            <div class="act__content">
+                <div class="act__title">
+                    <span>«Дії»</span> це мережа спортклубів з сучасним якісним обладнанням. Зі зручними умовами для тренувань. Тут завжди людно і весело, безліч обладнання для різноманітного та цікавого тренування, прийшовши в перший раз в житті в будь-якій фізичній формі, Ви зможете відчути себе затишно як вдома і комфортно тренуватися у своє задоволення.
+                </div>
+
+                <div class="act__advantages">
+                    <div class="act__advantages-title">
+                        Чому саме ми?
+                    </div>
+                    <div class="act__advantages-cards">
+                        <div class="act__advantages-card card-advOne">
+                            <img src="image/icons/barbell-done.png" alt="barbell-done">
+                            <h3>Якісне обладнання</h3>
+                        </div>
+                        <div class="act__advantages-card card-advTwo">
+                            <img src="image/icons/rainbown.png" alt="rainbown">
+                            <h3>Потужна вентиляція</h3>
+                        </div>
+                        <div class="act__advantages-card card-advTree">
+                            <img src="image/icons/hand.png" alt="hand">
+                            <h3>Чесні та розумні ціни</h3>
+                        </div>
+                        <div class="act__advantages-card card-advFour">
+                            <img src="image/icons/barbell.png" alt="barbell">
+                            <h3>Затишно як вдома</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-slider/slick.min.js"></script>
+    <script src="script/slider.js"></script>
 </body>
 </html>

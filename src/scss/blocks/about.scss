@@ -1,17 +1,264 @@
+
 .about {
 }
-
 .about__content {
-   
 }
 .about__ticket {
     background: url(..//image/main/about-work.png)center center/cover no-repeat;
+    max-width: 925px;
+    width: 925px;
+    height: 613px;
+    padding: 207px 0 0 188px;
 }
 .about__title {
+    span {
+        font-weight: $seven;
+        font-size: 80px;
+    }
+    font-weight: $tree;
+    font-size: 40px;
+    line-height: 96.69%;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.15);
 }
 .about__subtitle {
+    span{
+        font-weight: 900;
+        font-size: 73px;    
+    }
+    font-weight: $tree;
+    font-size: 40px;
+    line-height: 99.01%;
+    color: $yelow;
+    opacity: 0.8;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.15);
+    margin: 50px 0 33px 0;
 }
 .about__btn {
+    width: 278.35px;
+    height: 59.13px;
+    border: 1px solid #FFFFFF;
+    background-color: $yelow;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: $seven;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 .about__info {
+    font-weight: $four;
+    font-size: 12px;
+    line-height: 147%;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.15);
 }
+.about__main {
+    display: flex;
+    position: relative;
+}
+.about__slider {
+    width: 594px;
+    height: 415px;
+    background: $blue;
+    max-width: 1080px;
+    padding: 32px 0 32px 40px;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-promotion {
+        font-weight: $four;
+        font-size: 30px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    &-card {
+        position: relative;
+        width: 310px;
+        height: 244px;
+        margin: 0 24px;
+        img {
+            width: 310px;
+            height: 244px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    &-title {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        position: absolute;
+        top: 148px;
+        left: 27px;
+        right: 29px;
+        text-align: justify;
+    }
+
+    .one-title {
+        color: $yelow;
+        span {
+            font-weight: $seven;
+            word-break: break-all;
+        }
+    }
+    .two-title {
+        color: $black;
+        right: 56px;
+        top: 170px;
+        span {
+            font-weight: 900;
+            color: $blue;
+            word-break: break-all;
+        }
+    }
+    .tree-title {
+        color: #FFFFFF;
+        right: 16px;
+        top: 170px;
+
+        span {
+            font-weight: 900;
+        }
+    }
+}
+
+.slick-slider {
+    .slick-dots {
+        width: 81px;
+        bottom: -34px;
+        left: 53px;
+        li{
+            background:rgba(0, 0, 0, 0.15);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+           transition: 0.5s;
+        }
+        .slick-active {
+            width: 8px;
+            height: 8px;
+            background: #ffffff;
+            border-radius: 50%;
+        }
+    }
+   
+    .slick-prevAr {
+        position: absolute;
+        bottom: -37px;
+        cursor: pointer;
+    }
+    .slick-nextAr {
+        position: absolute;
+        left: 168px;
+        bottom: -37px;
+        cursor: pointer;
+
+    }
+}
+
+
+.about__news {
+        width: 675px;
+        max-height: 278px;
+        background: #FFFFFF;
+        box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 1px;
+        position: absolute;
+        bottom: -56px;
+        right: 0px;
+    &-content {
+        padding: 30px 40px;
+        width: 422px;
+        box-sizing: content-box;
+    }
+
+    &-tape {
+        display: flex;
+    }
+
+    &-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 20px;
+        h2 {
+            font-weight: $four;
+            font-size: 30px;
+            color: $blue;
+        }
+    }
+
+    &-all {
+        font-weight: $four;
+        font-size: 14px;
+        color: $blue;
+        display: block;
+        opacity: 0.5;
+        position: relative;
+        &::after {
+            content: url(..//image/icons/arrow-long.png);
+            bottom: -7px;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &-card {
+        max-width: 195px;
+        max-height: 144px;
+        height: 144px;
+        &:nth-child(1){
+            margin-right: 30px;
+        }
+    }
+   
+
+    &-title {
+        font-weight: $seven;
+        font-size: 17px;
+        color: $black;
+        margin-bottom: 2px;
+    }
+
+    &-subtitle {
+        font-weight: $tree;
+        font-size: 14px;
+        color: $light-black;
+        
+    }
+
+    &-info {
+        margin-top: 7px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-data {
+        font-weight: $tree;
+        font-size: 12px;
+        color: $light-black;
+        opacity: 0.5;
+    }
+
+    &-more {
+        font-weight: $four;
+        font-size: 14px;
+        color: $blue;
+        opacity: 0.5;
+        position: relative;
+        &::after {
+            content: url(..//image/icons/arrow-small.png);
+            bottom: -7px;
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+
+
