@@ -1,24 +1,65 @@
 .act {
     position: relative;
-    &::after{
-        background: url(..//image/main/bg-blue.png)center cover/center no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        margin: 10px;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-    }
+    height: 1046px;
+}
+
+.act__bg-blue {
+    position: absolute;
+    background: url(..//image/main/bg-blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1109px;    
+    z-index: 0;
+    top: -63px;
+}
+.act__bg-black {
+    position: absolute;
+    background: url(..//image/main/bg-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1072px;
+    top: -40px;
+}
+
+.act__bg-simulator {
+    position: absolute;
+    background: url(..//image/main/simulators.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 469px;
+    top: 89px;
+    z-index: 0;
+    left: -180px;
+}
+
+.act__bg-sportbody {
+    position: absolute;
+    background: url(..//image/main/sport-body.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 795px;
+    top: 58px;
+    z-index: 0;
+    right: -499px;
 }
 
 .act__content {
+    position: relative;
+    width: 751px;
+    height: 685px;
+    padding: 140px 0 135px 0;
 }
 .act__title {
     font-weight: $tree;
+    width: 438px;
+    line-height: 147%;
+    word-spacing: 3px;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #a7a7a7;
+    position: relative;
+    z-index: 1;
     span {
         font-weight: 900;
         font-size: 50px;
@@ -30,38 +71,73 @@
         font-weight: 900;
         font-size: 50px;
         color: $blue;
+        margin: 100px 0 70px 0;
+        position: relative;
     }
 
     &-cards {
         width: 751px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     &-card {
-        position: relative;
-        h3 {
-            font-weight: $five;
-            font-size: 22px;
-            color: #FFFFFF;
-        }
-            &:nth-child(1) {
-                content: url(..//image/icons/1.png);
-                position: absolute;
+        margin-bottom: 80px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+            h3 {
+                font-weight: $five;
+                font-size: 22px;
+                color: #FFFFFF;
+                position: relative;
+                z-index: 1;
+            }
+            img {
+                display: block;
+                margin-right: 30px;
             }
 
-            &:nth-child(2) {
-                content: url(..//image/icons/2.png);
-                position: absolute;
+            &:nth-child(1) {
+                position: relative;
+                &::after {
+                    content: url(..//image/icons/1.png);
+                    position: absolute;
+                    left: 81px;
+                    top: -27px;
+                    z-index: 0;
+                }
             }
-            
+            &:nth-child(2) {
+                position: relative;
+                &::after {
+                    content: url(..//image/icons/2.png);
+                    position: absolute;
+                    left: 81px;
+                    top: -27px;
+                    z-index: 0;
+                }
+            }
             &:nth-child(3) {
-                content: url(..//image/icons/3.png);
-                position: absolute;
+                position: relative;
+                &::after {
+                    content: url(..//image/icons/3.png);
+                    position: absolute;
+                    left: 81px;
+                    top: -27px;
+                    z-index: 0;
+                }
             }
             &:nth-child(4) {
-                content: url(..//image/icons/4.png);
-                position: absolute;
+                position: relative;
+                &::after {
+                    content: url(..//image/icons/4.png);
+                    position: absolute;
+                    left: 81px;
+                    top: -27px;
+                    z-index: 0;
+                }
             }
         }
     }  

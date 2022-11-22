@@ -1,0 +1,130 @@
+.teams {
+    background: $light-black;
+    position: relative;
+}
+
+.teams__bg {
+    background: url(..//image/main/teams-bg.png)no-repeat;
+    width: 896px;
+    height: 542px;
+    right: 89px;
+    top: 210px;
+    bottom: 0;
+    position: absolute;
+}
+    
+.teams__content {
+    padding: 100px 0;
+    position: relative;
+}
+.teams__title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: $yelow;
+}
+.teams__slider {
+    margin-top: 50px;
+    &-card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-img {
+        width: 411px;
+        height: 443px;
+        img {
+            width: 411px;
+            height: 443px;
+        }
+    }
+    &-info {
+        margin-left: 110px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 41px;
+            width: 70%;
+            height: 1px;
+            background: $blue;
+        }
+    }
+
+    &-social {
+       position: absolute;
+       width: 88px;
+       display: flex;
+       justify-content: space-between;
+       right: 0;
+       top: 31px;
+       align-items: center;
+    }
+
+    &-name {
+        font-weight: $four;
+        font-size: 30px;
+        line-height: 147%;
+        color: #FFFFFF;
+    }
+
+    &-rang {
+        font-weight: $tree;
+        font-size: 17px;
+        line-height: 130%;
+        color: $yelow;        
+    }
+
+    &-study {
+        font-weight: $seven;
+        font-size: 17px;
+        line-height: 130%;
+        color: $blue;
+        margin: 10px 0 5px 0;
+    }
+
+    &-univer {
+        font-weight: $seven;
+        font-size: 14px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin: 10px 0 15px 0;
+        span {
+            opacity: 0.5;
+        }
+    }
+
+    &-skills {
+        span {
+            font-weight: $seven;
+            font-size: 17px;
+            line-height: 130%;
+            color: $blue;     
+            margin-bottom: 8px; 
+            display: block;
+        }  
+        p {
+            font-weight: $tree;
+            font-size: 14px;
+            line-height: 152%;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+    }
+
+    &-exp {
+        font-weight: $seven;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 130%;
+        color: $yelow;
+    }
+}
+
+
+
+

@@ -34,7 +34,7 @@
     text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.15);
     margin: 50px 0 33px 0;
 }
-.about__btn {
+.about__btn, .about__order-btn {
     width: 278.35px;
     height: 59.13px;
     border: 1px solid #FFFFFF;
@@ -171,6 +171,7 @@
         position: absolute;
         bottom: -56px;
         right: 0px;
+        z-index: 1;
     &-content {
         padding: 30px 40px;
         width: 422px;

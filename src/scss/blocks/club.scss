@@ -1,0 +1,132 @@
+.club {
+}
+.club__content {
+    position: relative;
+    padding-top: 90px;
+}
+
+.club__bg-black {
+    background: url(..//image/main/club-black.png)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 36px;left: 0;bottom: 0;
+    z-index: -1;
+}
+.club__bg-white {
+    background: url(..//image/main/club-white.png)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 36px;right: 0;bottom: 0;
+    z-index: -2;
+}
+
+.club__title {
+    font-weight: 900;
+    font-size: 50px;
+    display: block;
+    line-height: 60px;
+    padding: 0 0 55px 130px;
+    color: #FFFFFF;
+}
+.club__menu {
+    &-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &-item {
+        box-sizing: border-box;
+        width: 340px;
+        height: 80px;
+        background: #242F3C;
+        border: 1px solid $light-black;
+        padding: 25px 0;
+            h3 {
+                font-weight: 900;
+                font-size: 18px;
+                text-align: center;
+                color: #FFFFFF;
+                opacity: 0.6;
+            }
+            h4 {
+                font-weight: $tree;
+                font-size: 14px;
+                text-align: center;
+                color: #FFFFFF;
+                opacity: 0.6;
+            }
+        &:nth-child(1), &:nth-child(4) {
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+        }
+        &:nth-child(1) {
+            align-items: end;
+            padding-right: 80px;
+        }
+        &:nth-child(4) {
+            align-items: flex-start;
+            padding-left: 80px;
+
+        }
+    }
+}
+
+.club__info {
+    display: flex;
+    height: 500px;
+    &-bg {
+        width: 50%;
+        display: flex;
+        background: url(..//image/main/club-bg.png)center center/cover no-repeat;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: -1;
+    }
+    &-main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 485px;
+        justify-content: space-between;
+        div:first-child {
+            margin-bottom: 50px;
+        }
+    }
+    &-address {
+        h3,a {
+            font-weight: $tree;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            margin: 8px 0;
+        }
+        
+    }
+     
+    &-title {
+        font-weight: $four;
+        font-size: 22px;
+        line-height: 26px;
+        color: $blue;
+        margin: 8px 0;
+    }
+}
+
+
+.activite-btn-club {
+    border: none;
+    background: $blue;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    transform: scale(1.2);
+}
+
+.club__info-map {
+    position: relative;
+    z-index: -1;
+}
