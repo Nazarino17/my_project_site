@@ -1,3 +1,4 @@
+//Slider about
 $('.about__slider-content').slick({
     dots: true,
     infinite: false,
@@ -7,4 +8,13 @@ $('.about__slider-content').slick({
     variableWidth: true,
     prevArrow: '<img class="slick-prevAr" src="image/icons/left-arr.png" alt="arrow-bottom">',
     nextArrow: '<img class="slick-nextAr" src="image/icons/right-arr.png" alt="arrow-bottom">'
+  });
+
+
+//Slider teams
+  $('.teams__slider').slick({
+    infinite: false,
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
   });
