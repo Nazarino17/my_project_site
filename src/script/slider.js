@@ -16,5 +16,8 @@ $('.about__slider-content').slick({
     infinite: false,
     dots: false,
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow: 1
   });
+
+
+
